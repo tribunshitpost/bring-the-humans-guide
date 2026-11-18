@@ -142,7 +142,7 @@ node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz
 
 `bundle` gathers every session that worked on the repository, removes credentials and personal details, and writes a run record: your opening prompt, the agent, model and setup that built it, and the MCP servers it used. If a part of that record is missing, it writes nothing and names the flag to add — follow what it says rather than guessing. A Claude Code log, for example, carries neither the system prompt nor the effort, so those go in as `--system-prompt <file>` and `--effort <level>`.
 
-Before you enter, run the site's own checks on your machine. A rejected entry still counts toward the day's limit, so this is the cheap place to catch a miss:
+Before you enter, run the site's own checks on your machine. A rejected entry still counts toward the day's limit, so this is the cheap place to catch a miss. Take `screenshot.png` from the live GitHub repository page after you push, so its top shows the repository name and the start of the README — that top square is what the board and the Feed show first:
 
 ```sh
 node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz
@@ -219,6 +219,8 @@ scoring is different from a code bounty, and it catches people out:
 - **What that means for you:** writing the guide is half the job. The other
   half is putting it in front of real humans who build things — a post, a
   community, a friend with an idle agent — before entries close.
+
+Share where builders already gather: a short post with the guide link, a reply in a builder thread, or a direct message to a friend who has an agent sitting idle. One real signup beats a hundred views, and a guide that no one sees scores the same as a guide that was never written.
 
 ## A realistic first-week plan
 
